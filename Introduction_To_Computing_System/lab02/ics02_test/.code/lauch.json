@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "(gdb)c_launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "x64",
+            "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+            "miDebuggerPath": "D:/init_all/vscode_editor/Mingwgcc/mingw64/bin/gdb.exe",
+            "MIMode": "gdb",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "internalConsoleOptions": "openOnFirstSessionStart",
+            "externalConsole": true,
+            "preLaunchTask": "gcc"
+        }
+    ]
+}

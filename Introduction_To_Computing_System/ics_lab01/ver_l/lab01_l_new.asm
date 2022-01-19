@@ -1,0 +1,7 @@
+.orig x3000
+ADD R2,R1,#0;
+BRz ENDL;
+LOOP ADD R7,R0,R7;
+ADD R1,R1,#-1;
+ENDL BRnp LOOP;
+ .end

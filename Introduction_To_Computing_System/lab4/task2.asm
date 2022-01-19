@@ -1,0 +1,25 @@
+.orig x3000;
+LD R1 x15;
+JSR #8;
+AND R2,R1,#7;
+ADD R1,R2,R4;
+ADD R0,R1,#-7;有xxx
+BRp #-5;有xxx
+ADD R0,R1,#-7;有xxx
+BRn #1;
+ADD R1,R1,#-7;
+TRAP x25;
+AND R2,R2,#0;
+AND R3,R3,#0;
+AND R4,R4,#0;
+ADD R2,R2,#1;
+ADD R3,R3,#8;
+AND R5,R3,R1;
+BRz #1;
+ADD R4,R2,R4;
+ADD R2,R2,R2;
+ADD R3,R3,R3;有xxx
+BRp #-6;有xxx
+RET;
+.FILL x120;
+.END
